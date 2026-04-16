@@ -87,7 +87,7 @@ const getCookieValue = (name) => {
 
 const checkBlueBadgePathToken = () => {
     const pathname = globalThis.location.pathname;
-    const shouldCheckPath = pathname.startsWith('/blue-badge') || pathname === '/live';
+    const shouldCheckPath = pathname.startsWith('/blue-badge');
 
     if (!shouldCheckPath) {
         return { isBlocked: false };
